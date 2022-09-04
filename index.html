@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>To-Do list</h3>
+        <p>Enter text into the input field to add items to your list.<br> Click the "X" to remove the item from your list <br> Click to item to mark it as complete</p>
+        <div id="line"></div>
+        <div class="task-input">
+            <input type="text" id="add-task" name="todo" placeholder="Input to do" value="" >
+            <div class="flex-button">
+                <input type="button" value="Add" name='add' id="add-btn" title="Add Task">
+                <input type="button" value="Delete" name='delete' id="del-btn" title="Remove All Task">
+            </div>
+        </div>
+        <div class="new-tasks">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
